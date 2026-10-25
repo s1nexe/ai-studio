@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUMEN — студия AI-видеопроизводства</title>
+  <meta name="description" content="Студия AI-видеопроизводства: AI-мультфильмы, рекламные ролики и музыкальные клипы.">
+  <meta name="theme-color" content="#07070b">
+
+  <!-- Помечаем, что JavaScript работает: от этого зависят анимации появления -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Ссылка для пользователей клавиатуры и экранных дикторов -->
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- ===================== ШАПКА ===================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="LUMEN — на главную">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span>LUMEN<span class="logo__accent">.ai</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">
+        <span class="menu-toggle__line" aria-hidden="true"></span>
+        <span class="menu-toggle__line" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#services">Услуги</a></li>
+          <li><a class="nav__link" href="#portfolio">Портфолио</a></li>
+          <li><a class="nav__link" href="#advantages">Преимущества</a></li>
+          <li><a class="nav__link" href="#contact">Контакты</a></li>
+        </ul>
+        <a class="btn btn--primary btn--small" href="#contact">Обсудить проект</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== ПЕРВЫЙ ЭКРАН ===================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__meta reveal" aria-hidden="true">
+          <span class="rec"><span class="rec__dot"></span>REC</span>
+          <span>4K</span>
+          <span>24 fps</span>
+          <span class="hero__timecode">00:00:24:12</span>
+        </p>
+
+        <p class="eyebrow reveal" style="--d:1">Студия AI-видеопроизводства</p>
+
+        <h1 class="hero__title" id="hero-title">
+          Превращаем идеи в&nbsp;<span class="text-gradient">кино</span> с&nbsp;помощью&nbsp;AI
+        </h1>
+
+        <p class="hero__lead reveal" style="--d:3">
+          Создаём мультфильмы, рекламу и музыкальные клипы, в которых режиссура и вкус —
+          от людей, а скорость и масштаб — от нейросетей.
+        </p>
+
+        <div class="hero__actions reveal" style="--d:4">
+          <a class="btn btn--primary" href="#contact">
+            Обсудить проект
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <a class="btn btn--ghost" href="#portfolio">Смотреть демо</a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#services" aria-label="Прокрутить к разделу «Услуги»">
+        <span class="scroll-hint__wheel" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===================== УСЛУГИ ===================== -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Услуги</p>
+          <h2 class="section__title reveal" id="services-title" style="--d:1">Что мы создаём</h2>
+          <p class="section__lead reveal" style="--d:2">
+            Три направления, в которых AI раскрывается сильнее всего — от сказочной анимации до ритмичного клипа.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="9" cy="10" r="1.2" />
+                <circle cx="15" cy="10" r="1.2" />
+                <path d="M8.5 14.5c1.8 2 5.2 2 7 0" />
+              </svg>
+            </div>
+            <h3 class="card__title">AI-мультфильмы</h3>
+            <p class="card__text">
+              Короткие и длинные анимационные истории: от разработки персонажей до финального монтажа и озвучки.
+            </p>
+            <ul class="card__list">
+              <li>Сценарий и раскадровка</li>
+              <li>Единый стиль персонажей</li>
+              <li>Музыка и озвучка</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="--d:1">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <rect x="3" y="6" width="13" height="12" rx="2" />
+                <path d="M16 10l5-3v10l-5-3z" />
+              </svg>
+            </div>
+            <h3 class="card__title">Рекламные ролики</h3>
+            <p class="card__text">
+              Видео для брендов, соцсетей и презентаций. Быстро проверяем несколько визуальных идей до запуска.
+            </p>
+            <ul class="card__list">
+              <li>Креативная концепция</li>
+              <li>Версии под разные площадки</li>
+              <li>Несколько вариантов визуала</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="--d:2">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M9 18V5l11-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="17" cy="16" r="3" />
+              </svg>
+            </div>
+            <h3 class="card__title">Музыкальные клипы</h3>
+            <p class="card__text">
+              Визуальные миры под ваш трек: монтаж в ритм, сюрреалистичные переходы и стиль, который сложно снять камерой.
+            </p>
+            <ul class="card__list">
+              <li>Визуальная идея под трек</li>
+              <li>Монтаж в ритм музыки</li>
+              <li>Вертикальные версии</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ПОРТФОЛИО ===================== -->
+    <section class="section section--alt" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Портфолио</p>
+          <h2 class="section__title reveal" id="portfolio-title" style="--d:1">Демонстрационные работы</h2>
+          <p class="notice reveal" style="--d:2">
+            <svg class="notice__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 11v5M12 8h.01" />
+            </svg>
+            <span>
+              Все карточки ниже — <strong>демонстрационные заглушки</strong>, а не реальные проекты или клиенты.
+              Позже их можно заменить настоящими работами.
+            </span>
+          </p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Фильтр демо-работ по направлению">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filter" type="button" data-filter="animation" aria-pressed="false">Мультфильмы</button>
+          <button class="filter" type="button" data-filter="ads" aria-pressed="false">Реклама</button>
+          <button class="filter" type="button" data-filter="music" aria-pressed="false">Клипы</button>
+        </div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+        <div class="works">
+          <article class="work reveal" data-category="animation">
+            <div class="work__poster work__poster--1" aria-hidden="true"><span class="work__play"></span></div>
+            <div class="work__body">
+              <div class="work__meta"><span class="tag">AI-мультфильм</span><span class="badge-demo">Демо</span></div>
+              <h3 class="work__title">Город над облаками</h3>
+              <p class="work__text">Пример карточки: сказочная история в стиле мягкой 3D-анимации.</p>
+            </div>
+          </article>
+
+          <article class="work reveal" data-category="ads" style="--d:1">
+            <div class="work__poster work__poster--2" aria-hidden="true"><span class="work__play"></span></div>
+            <div class="work__body">
+              <div class="work__meta"><span class="tag">Реклама</span><span class="badge-demo">Демо</span></div>
+              <h3 class="work__title">Неоновый вкус</h3>
+              <p class="work__text">Пример карточки: динамичный ролик для продукта в неоновой эстетике.</p>
+            </div>
+          </article>
+
+          <article class="work reveal" data-category="music" style="--d:2">
+            <div class="work__poster work__poster--3" aria-hidden="true"><span class="work__play"></span></div>
+            <div class="work__body">
+              <div class="work__meta"><span class="tag">Клип</span><span class="badge-demo">Демо</span></div>
+              <h3 class="work__title">Эхо</h3>
+              <p class="work__text">Пример карточки: сюрреалистичный клип с плавными морфинг-переходами.</p>
+            </div>
+          </article>
+
+          <article class="work reveal" data-category="animation">
+            <div class="work__poster work__poster--4" aria-hidden="true"><span class="work__play"></span></div>
+            <div class="work__body">
+              <div class="work__meta"><span class="tag">AI-мультфильм</span><span class="badge-demo">Демо</span></div>
+              <h3 class="work__title">Последний маяк</h3>
+              <p class="work__text">Пример карточки: атмосферная короткометражка о дружбе и море.</p>
+            </div>
+          </article>
+
+          <article class="work reveal" data-category="ads" style="--d:1">
+            <div class="work__poster work__poster--5" aria-hidden="true"><span class="work__play"></span></div>
+            <div class="work__body">
+              <div class="work__meta"><span class="tag">Реклама</span><span class="badge-demo">Демо</span></div>
+              <h3 class="work__title">Утро начинается</h3>
+              <p class="work__text">Пример карточки: тёплый имиджевый ролик в мягком рассветном свете.</p>
+            </div>
+          </article>
+
+          <article class="work reveal" data-category="music" style="--d:2">
+            <div class="work__poster work__poster--6" aria-hidden="true"><span class="work__play"></span></div>
+            <div class="work__body">
+              <div class="work__meta"><span class="tag">Клип</span><span class="badge-demo">Демо</span></div>
+              <h3 class="work__title">Пульс</h3>
+              <p class="work__text">Пример карточки: ритмичный клип с графикой, реагирующей на бит.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ПРЕИМУЩЕСТВА ===================== -->
+    <section class="section" id="advantages" aria-labelledby="advantages-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Преимущества</p>
+          <h2 class="section__title reveal" id="advantages-title" style="--d:1">Почему AI-продакшн</h2>
+          <p class="section__lead reveal" style="--d:2">
+            Нейросети не заменяют творчество — они убирают дорогие и долгие ограничения классических съёмок.
+          </p>
+        </header>
+
+        <ul class="advantages">
+          <li class="advantage card reveal">
+            <span class="advantage__num" aria-hidden="true">01</span>
+            <h3 class="advantage__title">Быстрые итерации</h3>
+            <p class="advantage__text">Первые визуальные варианты появляются уже на старте, а правки не требуют пересъёмок.</p>
+          </li>
+          <li class="advantage card reveal" style="--d:1">
+            <span class="advantage__num" aria-hidden="true">02</span>
+            <h3 class="advantage__title">Разумный бюджет</h3>
+            <p class="advantage__text">Не нужны площадки, аренда техники, массовка и выезды — бюджет уходит в идею.</p>
+          </li>
+          <li class="advantage card reveal" style="--d:2">
+            <span class="advantage__num" aria-hidden="true">03</span>
+            <h3 class="advantage__title">Любой визуальный стиль</h3>
+            <p class="advantage__text">От акварели и аниме до фотореализма — и миры, которые невозможно снять камерой.</p>
+          </li>
+          <li class="advantage card reveal">
+            <span class="advantage__num" aria-hidden="true">04</span>
+            <h3 class="advantage__title">Люди у руля</h3>
+            <p class="advantage__text">Сценарий, режиссура и монтаж — за командой. AI — инструмент, а не автор.</p>
+          </li>
+          <li class="advantage card reveal" style="--d:1">
+            <span class="advantage__num" aria-hidden="true">05</span>
+            <h3 class="advantage__title">Прозрачный процесс</h3>
+            <p class="advantage__text">Вы видите промежуточные этапы и влияете на результат на каждом шаге.</p>
+          </li>
+          <li class="advantage card reveal" style="--d:2">
+            <span class="advantage__num" aria-hidden="true">06</span>
+            <h3 class="advantage__title">Версии под площадки</h3>
+            <p class="advantage__text">Горизонтальные, вертикальные и квадратные версии одного ролика без лишней работы.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== КОНТАКТЫ ===================== -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__info">
+          <p class="eyebrow reveal">Контакты</p>
+          <h2 class="section__title reveal" id="contact-title" style="--d:1">Расскажите о&nbsp;своей идее</h2>
+          <p class="section__lead reveal" style="--d:2">
+            Опишите задачу в паре предложений — этого достаточно, чтобы начать разговор.
+          </p>
+
+          <address class="contact__list reveal" style="--d:3">
+            <p class="contact__item">
+              <span class="contact__label">Почта (пример)</span>
+              <a href="mailto:hello@example.com">hello@example.com</a>
+            </p>
+            <p class="contact__item">
+              <span class="contact__label">Telegram (пример)</span>
+              <span>@example_studio</span>
+            </p>
+            <p class="contact__hint">Контакты условные — замените их на настоящие перед публикацией.</p>
+          </address>
+        </div>
+
+        <form class="form reveal" id="contact-form" novalidate aria-describedby="form-demo-note" style="--d:2">
+          <p class="form__demo" id="form-demo-note">
+            <strong>Демо-режим.</strong> Форма не подключена к серверу: данные никуда не отправляются и не сохраняются.
+          </p>
+
+          <div class="field">
+            <label class="field__label" for="name">Ваше имя</label>
+            <input class="field__input" id="name" name="name" type="text" autocomplete="name" required
+                   aria-describedby="name-error">
+            <p class="field__error" id="name-error"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="email">Email</label>
+            <input class="field__input" id="email" name="email" type="email" autocomplete="email" required
+                   aria-describedby="email-error">
+            <p class="field__error" id="email-error"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="type">Что хотите создать?</label>
+            <select class="field__input field__select" id="type" name="type">
+              <option value="animation">AI-мультфильм</option>
+              <option value="ads">Рекламный ролик</option>
+              <option value="music">Музыкальный клип</option>
+              <option value="other">Пока не знаю — нужен совет</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="message">О проекте</label>
+            <textarea class="field__input field__textarea" id="message" name="message" rows="4" required
+                      aria-describedby="message-error"></textarea>
+            <p class="field__error" id="message-error"></p>
+          </div>
+
+          <button class="btn btn--primary btn--full" type="submit">Отправить заявку (демо)</button>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== ПОДВАЛ ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> LUMEN.ai — демонстрационный сайт.</p>
+      <p class="footer__note">Название студии, работы и контакты условные.</p>
+    </div>
+  </footer>
+</body>
+</html>
