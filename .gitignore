@@ -1,0 +1,14 @@
+# Служебные файлы Windows и macOS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Файлы с секретами и переменными окружения
+.env
+.env.*
+
+# Личные настройки Claude Code (общий launch.json остаётся в репозитории)
+.claude/settings.local.json
+
+# Логи
+*.log
